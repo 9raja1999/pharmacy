@@ -4,7 +4,7 @@
 import {
     DownloadIcon
 } from '@/utils/buttonIcons'
-import styles from '../../../../styles/buttons/navigationBtns.module.scss'
+import styles from '../../../../styles/components/buttons/navigationBtns.module.scss'
 
 
 interface IExportBtn {

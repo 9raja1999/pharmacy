@@ -1,4 +1,4 @@
-import styles from '../../../styles/badges/badges.module.scss'
+import styles from '../../../styles/components/badges/badges.module.scss'
 
 
 interface IStatusBadge {
