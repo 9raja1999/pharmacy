@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signup{
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #323232;
+  }
+  .guide {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #323232;
+    max-width:600px;
+    margin-top: 15px;
+  }
+
+  .signupButton {
+    width: 100%;
+  }
+  .color {
+    color: #008080;
+  }
+  .forgotPass {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color:#008080;
+    text-decoration: none;
+    
+  }
+  .statement {
+    color: #008080;
+    text-decoration: none;
+  }
+  .flexContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+  }
+}

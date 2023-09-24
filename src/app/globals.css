@@ -77,7 +77,7 @@ body {
 }
 
 body {
-  background: var(--background-rgba);
+  background: var(--background-rgba) !important;
 }
 
 ul,

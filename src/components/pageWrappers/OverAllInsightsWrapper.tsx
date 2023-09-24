@@ -12,10 +12,18 @@ export default function OverAllInsightsWrapper() {
             <OverAllInsightsHeader />
             <div className={`row ${styles.cardsSection}`}>
                 <div className="col-lg-6">
-                    <AnalyticCard />
+                    <AnalyticCard
+                        cardTitle='this month sale'
+                        cardData={{ data: 50000, unit: 'PKR' }}
+                        isLink={true}
+                        />
                 </div>
                 <div className="col-lg-6">
-                    <AnalyticCard />
+                    <AnalyticCard
+                        cardTitle='vendors outstanding'
+                        cardData={{ data: 50000, unit: 'PKR' }}
+                        isLink={true}
+                    />
                 </div>
             </div>
             <div className={`row`}>

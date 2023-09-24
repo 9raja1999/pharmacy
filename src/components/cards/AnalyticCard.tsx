@@ -7,7 +7,20 @@ import { RightArrowIcon } from '@/utils/arrowIcons'
 import styles from '../../../styles/components/cards/analytic.card.module.scss'
 
 
-export default function AnalyticCard() {
+
+interface IAnalyticCard {
+    cardTitle: String,
+    isLink: Boolean,
+    cardData: {
+        data: Number,
+        unit: String
+    }
+}
+
+export default function AnalyticCard(props: IAnalyticCard) {
+    const { cardData, cardTitle, isLink } = props;
+
+
     return (
         <div className={styles.analyticCardWrapper}>
             <div className={styles.infoIcon}>
@@ -15,13 +28,13 @@ export default function AnalyticCard() {
             </div>
             <div className={styles.cardTitleSection}>
                 <AnalyticIcon />
-                <p className={styles.cardTitle}>This Month Sale</p>
-                <RightArrowIcon/>
+                <p className={styles.cardTitle}>{cardTitle || 'analytic card'}</p>
+                {isLink && <RightArrowIcon />}
             </div>
             <div className={styles.cardData}>
                 <p>
-                    40,000.00
-                    <span className={styles.unit}>PKR</span>
+                    {`${cardData.data.toString()}.00` || '0.00'}
+                    <span className={styles.unit}>{cardData.unit || 'unit'}</span>
                 </p>
             </div>
         </div>

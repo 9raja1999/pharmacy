@@ -3,16 +3,21 @@ import {
     Select
 } from 'antd'
 import { DropdDownIcon, FilterIcon } from '@/utils/arrowIcons'
+import { AddCircularIcon } from '@/utils/buttonIcons'
 import ExportBtn from '../buttons/dataBtns/ExportBtn'
 import styles from '../../../styles/components/headers/page.header.module.scss'
 
-export default function OverAllInsightsHeader() {
+export default function VendorHeader() {
     return (
         <div className={styles.insightsHeader}>
             <div className={styles.pageInfo}>
-                <h1 className={styles.pageName}>History</h1>
+                <h1 className={styles.pageName}>Vendors</h1>
             </div>
             <div className={styles.actions}>
+                <button className={styles.addBtn}>
+                    <AddCircularIcon />
+                    <span>Add new inventory</span>
+                </button>
                 <button className={styles.filterBtn}>
                     <FilterIcon />
                     <Select
