@@ -1,6 +1,12 @@
-
+import VendorWrapper from "@/components/pageWrappers/VendorWrapper"
 export default function Vendors(){
     return (
-        <h1>popo</h1>
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <VendorWrapper />
+                </div>
+            </div>
+        </div>
     )
 }
