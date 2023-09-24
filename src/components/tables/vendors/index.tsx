@@ -34,8 +34,8 @@ const columns: ColumnsType<DataType> = [
     {
         title: 'Contact Person Name | Number',
         dataIndex: 'availableStock',
-        render: (data) => data.map((el: { qty: Number, label: String }) => (
-            <span style={{ padding: '0px 5px' }}>
+        render: (data) => data.map((el: { qty: Number, label: String }, i: number) => (
+            <span key={i} style={{ padding: '0px 5px' }}>
                 {el.qty.toString() + " " + el.label + "  |"}
             </span>
         ))

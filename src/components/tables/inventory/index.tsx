@@ -34,9 +34,9 @@ const columns: ColumnsType<DataType> = [
     {
         title: 'Available Stock',
         dataIndex: 'availableStock',
-        render: (data) => data.map((el: { qty: Number, label: String }) => (
-            <span style={{padding : '0px 5px'}}>
-                {el.qty.toString() + " " + el.label + "  |" } 
+        render: (data) => data.map((el: { qty: Number, label: String }, i: number) => (
+            <span key={i} style={{ padding: '0px 5px' }}>
+                {el.qty.toString() + " " + el.label + "  |"}
             </span>
         ))
     },
@@ -69,7 +69,7 @@ const data: DataType[] = [
         key: 1,
         productId: 9248120002121,
         pruductName: 'Panadol',
-        availableStock: [{ qty: 8, label: 'packets' },{ qty: 8, label: 'tablets' }],
+        availableStock: [{ qty: 8, label: 'packets' }, { qty: 8, label: 'tablets' }],
         status: 'medium',
         expiry: new Date(),
         price: { amount: 10000, currency: 'PKR' }
@@ -78,7 +78,7 @@ const data: DataType[] = [
         key: 2,
         productId: 9248120002121,
         pruductName: 'Panadol',
-        availableStock: [{ qty: 8, label: 'packets' },{ qty: 8, label: 'tablets' }],
+        availableStock: [{ qty: 8, label: 'packets' }, { qty: 8, label: 'tablets' }],
         status: 'medium',
         expiry: new Date(),
         price: { amount: 10000, currency: 'PKR' }
@@ -87,7 +87,7 @@ const data: DataType[] = [
         key: 3,
         productId: 9248120002121,
         pruductName: 'Panadol',
-        availableStock: [{ qty: 8, label: 'packets' },{ qty: 8, label: 'tablets' }],
+        availableStock: [{ qty: 8, label: 'packets' }, { qty: 8, label: 'tablets' }],
         status: 'medium',
         expiry: new Date(),
         price: { amount: 10000, currency: 'PKR' }
