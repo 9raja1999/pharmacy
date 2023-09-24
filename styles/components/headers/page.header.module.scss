@@ -7,6 +7,12 @@
     margin-bottom: 40px;
 
     .pageInfo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 16px;
+
         h1.pageName {
             margin-bottom: 0px;
             color: #24282C;
@@ -17,6 +23,17 @@
             letter-spacing: -0.14px;
             border-right: 1px solid #323232;
             padding-right: 16px;
+        }
+
+        p.userName {
+            margin-bottom: 0px;
+            color: #323232;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            text-transform: capitalize;
+            cursor: pointer;
         }
     }
 
