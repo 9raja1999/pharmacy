@@ -1,5 +1,6 @@
+
 export default function Vendors(){
     return (
-        <h1>lklk</h1>
+        <h1>popo</h1>
     )
 }
