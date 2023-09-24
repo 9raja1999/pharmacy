@@ -34,7 +34,7 @@ export default function AnalyticCard(props: IAnalyticCard) {
             <div className={styles.cardData}>
                 <p>
                     {`${cardData.data.toString()}.00` || '0.00'}
-                    <span className={styles.unit}>{cardData.unit || 'unit'}</span>
+                    <span className={styles.unit}>{cardData.unit || null}</span>
                 </p>
             </div>
         </div>
