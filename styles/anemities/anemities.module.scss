@@ -1,8 +1,20 @@
-.overflowScroll{
+.overflowScroll {
     overflow-y: scroll;
-    scrollbar-width: none; // safari hide scroll bar
 
-    &::-webkit-scrollbar{ // for chrome hide scroll bar
-        display: none;
+
+    &::-webkit-scrollbar {
+        // for chrome hide scroll bar
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #008080;
+        outline: 1px solid #008080;
+        border-radius: 10px;
     }
 }
