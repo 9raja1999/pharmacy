@@ -2,14 +2,12 @@
 import { Button, Checkbox } from 'antd';
 import styles from '../../../styles/registration/Registration.module.scss';
 import FormField from '../TextInput/TextInput';
-import { useRouter } from 'next/navigation';
 
-const Registration = () => {
-  const router = useRouter();
+const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.signup}>
-        <h2>Sign up to your Pharmacy</h2>
+        <h2>Login to your Pharmacy</h2>
         <p>Start managing your stock, and get real insights about sales</p>
         <FormField label="Email Address" id="email" placeholder="Email" />
         <FormField label="Password" id="password" placeholder="Password" />
@@ -18,7 +16,7 @@ const Registration = () => {
           <a href='#' className={styles.forgotPass}>Forgot Your Password?</a>
         </div>
         <p className={styles.guide}>The account is register by uxbolt.co, you are consenting to our <a className={styles.color} href='#'>Terms of Service</a> and confirming that you have reviewed and accepted the <a href='#' className={styles.statement}>Global Privacy Statement.</a></p>
-        <Button type="primary" className={styles.signupButton}onClick={() => router.push('/otp')}>
+        <Button type="primary" className={styles.signupButton}>
           Continue
         </Button>
       </div>
@@ -26,4 +24,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default Login;

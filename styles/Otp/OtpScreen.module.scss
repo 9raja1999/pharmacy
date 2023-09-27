@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  h2 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.verifytext {
+  margin-bottom: 0px;
+  margin-right: 250px;
+  span {
+    color: #008080;
+  }
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+.timerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  width: 400px;
+}
+
+.timer {
+  width: 100px;
+  height: 100px;
+}
+
+.resendCode {
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: #008080;
+  }
+}
+
+.submitButton {
+  width: 400px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+@media (max-width: 425px) {
+  .verifytext {
+    margin-right: 150px;
+  }
+
+  .input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .timerContainer {
+    width: 300px;
+  }
+
+  .submitButton {
+    width: 300px;
+  }
+}

@@ -1,7 +1,8 @@
 import Sidebar from '@/components/sidebar/Sidebar'
 import styles from '../../../styles/dashboardlaymout.module.scss'
 import Signup from '@/components/registration/Registration'
-import Registration from '../(authGroup)/registration/page'
+import Registration from '../registration/page'
+import OtpScreen from '@/components/otp/OtpScreen'
 
 export default function DashboardLayout(
     {
@@ -14,6 +15,7 @@ export default function DashboardLayout(
         <>
             <div>
                 <Registration />
+                {/* <OtpScreen/> */}
             </div>
 
             {/* <div className={styles.wrapper}>
