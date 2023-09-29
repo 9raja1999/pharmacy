@@ -59,3 +59,17 @@ export const SearchIconFaded = () => {
     </svg>
 
 }
+
+export const DrawerCloseIcon = () => {
+    return <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_20_1943)">
+            <path opacity="0.05" d="M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z" fill="#0B9E5B" />
+            <path d="M23 16H8M8 16L12.8837 11M8 16L12.8837 21" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+        <defs>
+            <clipPath id="clip0_20_1943">
+                <rect width="32" height="32" fill="white" />
+            </clipPath>
+        </defs>
+    </svg>
+}
