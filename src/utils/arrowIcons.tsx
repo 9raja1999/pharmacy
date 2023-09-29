@@ -10,6 +10,12 @@ export const DropdDownIcon = () => {
     </svg>
 }
 
+export const LeftArrowIcon = () => {
+    return <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 8.5H3M3 8.5L7.42105 4M3 8.5L7.42105 13" stroke="#008080" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+}
+
 export const RightArrowIcon = () => {
     return <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M14.7899 12.53L11.2599 16.06C11.1099 16.21 10.9199 16.28 10.7299 16.28C10.5399 16.28 10.3499 16.21 10.1999 16.06C9.90992 15.77 9.90992 15.29 10.1999 15L13.1999 12L10.1999 9C9.90992 8.71 9.90992 8.23 10.1999 7.94C10.4899 7.65 10.9699 7.65 11.2599 7.94L14.7899 11.47C15.0899 11.76 15.0899 12.24 14.7899 12.53Z" fill="#008080" />
