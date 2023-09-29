@@ -46,7 +46,7 @@ export default function VerifyPage() {
 
                 <div className='d-flex justify-content-between align-items-center mb-4'>
                     <p className='mb-0'>01:56 left</p>
-                    <p className={styles.resendCode}>Didn't Received Code? <span>Resend Code</span></p>
+                    <p className={styles.resendCode}>Didnt Received Code? <span>Resend Code</span></p>
                 </div>
 
 
