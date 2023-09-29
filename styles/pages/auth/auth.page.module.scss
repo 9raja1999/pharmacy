@@ -97,6 +97,14 @@
         .otpInput {
             width: 72px !important;
             height: 72px !important;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #008080;
+
+            &:focus {
+                box-shadow: 0 0 2px #008080;
+            }
+
         }
 
         .resendCode {

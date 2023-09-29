@@ -1,20 +1,18 @@
 'use client'
-import {useRouter} from 'next/navigation'
+import { useState } from 'react';
+import { useRouter } from 'next/navigation'
 import OtpInput from 'react-otp-input'
 import {
     Button,
-    Input
 } from 'antd'
 import styles from '../../../../styles/pages/auth/auth.page.module.scss'
-import { useState } from 'react';
-
 
 
 export default function VerifyPage() {
     const router = useRouter()
     const [otp, setOtp] = useState('')
 
-    const handleSubmit = (e : any) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault()
 
         router.replace('/')
@@ -28,7 +26,7 @@ export default function VerifyPage() {
             <p className={styles.pageDescription}>Sorry for the inconvenience but its for your security.</p>
 
             <form onSubmit={handleSubmit}>
-                <div className={styles.label} style={{marginBottom : '16px'}}>
+                <div className={styles.label} style={{ marginBottom: '16px' }}>
                     Verification Code <span className={styles.required}>*</span>
                 </div>
 
@@ -41,7 +39,9 @@ export default function VerifyPage() {
                         justifyContent: 'space-between',
                         marginBottom: '24px'
                     }}
-                    renderInput={(props) => <Input {...props} className={styles.otpInput} size='large' />}
+                    renderInput={(props) => (
+                        <input {...props} className={styles.otpInput} />
+                    )}
                 />
 
                 <div className='d-flex justify-content-between align-items-center mb-4'>
