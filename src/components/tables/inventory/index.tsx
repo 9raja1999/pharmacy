@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import {
-    Table
+    Table, Tag
 } from 'antd'
 import PaginationItemRender from '../pagination/PaginationItemRender'
 import { PrettyDate } from '@/utils/DateFormatFunctions/DateFunctions'
@@ -43,6 +43,7 @@ const columns: ColumnsType<DataType> = [
     {
         title: 'Stock Status',
         dataIndex: 'status',
+        render : (data) => <Tag color='#6CA2FE'>{data}</Tag> 
     },
     {
         title: 'Expiry Date',
