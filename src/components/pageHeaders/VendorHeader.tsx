@@ -7,11 +7,21 @@ import {
 import { DropdDownIcon, FilterIcon } from '@/utils/arrowIcons'
 import { AddCircularIcon } from '@/utils/buttonIcons'
 import ExportBtn from '../buttons/dataBtns/ExportBtn'
+import CountSelection from './countSelection/CountSelection'
 import AddVendorForm from '../forms/AddVendorForm'
 import DrawerLayout from '../drawers/DrawerLayout'
 import styles from '../../../styles/components/headers/page.header.module.scss'
 
+
+interface IDataItem {
+    name: string;
+    count: number;
+}
+
 export default function VendorHeader() {
+    const [countData, setCOuntData] = useState<IDataItem[]>(
+        [{ name: 'sales', count: 20 }, { name: 'purchase', count: 20 }, { name: 'vendors', count: 20 }]
+    )
     const [open, setOpen] = useState<boolean>(false)
 
     const handleClose = useCallback(() => setOpen(false), [open])
@@ -21,6 +31,7 @@ export default function VendorHeader() {
         <div className={styles.insightsHeader}>
             <div className={styles.pageInfo}>
                 <h1 className={styles.pageName}>Vendors</h1>
+                <CountSelection data={countData} />
             </div>
             <div className={styles.actions}>
                 <button onClick={() => setOpen(true)} className={styles.addBtn}>
@@ -49,7 +60,7 @@ export default function VendorHeader() {
                 open={open}
                 onClose={handleClose}
             >
-               <AddVendorForm />
+                <AddVendorForm />
             </DrawerLayout>
         </div>
     )

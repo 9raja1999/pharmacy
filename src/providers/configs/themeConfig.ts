@@ -14,9 +14,14 @@ const theme: ThemeConfig = {
             optionFontSize: 16,
         },
         Table: {
-            headerBg : '#F0F7F7',
-            headerColor : '#696677',
-            headerBorderRadius : 15
+            headerBg: '#F0F7F7',
+            headerColor: '#696677',
+            headerBorderRadius: 15
+        },
+        Popover: {
+            /* here is your component tokens */
+            minWidth: 0,
+            width: 133
         },
     },
 }
