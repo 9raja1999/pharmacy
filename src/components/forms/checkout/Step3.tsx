@@ -29,8 +29,8 @@ export default function Step3({ data, onCardSelect, checkout }: IStep2) {
             <div className='row mb-5'>
                 {
                     methods.map((el, idx) => (
-                        <div className='col-lg-6'>
-                            <PaymentMethodCard key={idx} onClick={onCardSelect} method={el} isSelected={data?.method === el} />
+                        <div className='col-lg-6' key={idx}>
+                            <PaymentMethodCard onClick={onCardSelect} method={el} isSelected={data?.method === el} />
                         </div>
                     ))
                 }
