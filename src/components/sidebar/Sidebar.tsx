@@ -1,8 +1,7 @@
 'use client'
 
-
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname , useRouter} from 'next/navigation'
 import CompanyProfile from './CompanyProfile/CompanyProfile'
 import DateTime from './DateTime/DateTime'
 import {
@@ -26,6 +25,7 @@ interface INavLinkItem {
 
 
 export default function Sidebar() {
+    const router = useRouter()
     const pathname = usePathname()
     const [navItems, setNavItems] = useState<INavLinkItem[]>(
         [
@@ -62,6 +62,7 @@ export default function Sidebar() {
                 }
                 <div
                     className={`${styles.navItem} ${styles.stickyBottom}`}
+                    onClick={() => router.replace('/auth')}
                 >
                     <div className={styles.left}>
                         <LogoutIcon />

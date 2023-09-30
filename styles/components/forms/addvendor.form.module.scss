@@ -39,7 +39,9 @@ form {
     }
 
     .submitBtn {
-       
+        position: sticky;
+        bottom: 0px;
+        width: 100%;
         background-color: #fff;
         padding: 20px 0px;
         display: flex;

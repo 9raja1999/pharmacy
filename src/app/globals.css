@@ -95,11 +95,13 @@ button {
 
 /* styling input placeholder on global with important */
 /* so the stylings won't get collapsed with sntd input placeholders styles */
+/* select::placeholder,
 input::placeholder {
-  color: rgba(50, 50, 50, 0.50) !important;;
+  color: rgba(50, 50, 50, 0.50) !important;
+  ;
   font-size: 14px !important;
   font-style: normal !important;
   font-weight: 300 !important;
   line-height: normal !important;
   letter-spacing: 0.14px !important;
-}
+} */

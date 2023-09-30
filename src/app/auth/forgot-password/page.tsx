@@ -1,5 +1,6 @@
 'use client'
 
+import {useRouter} from 'next/navigation'
 import Link from 'next/link'
 import { LeftArrowIcon } from '@/utils/arrowIcons'
 import {
@@ -19,9 +20,11 @@ const customizeRequiredMark = (label: React.ReactNode, { required }: { required:
 );
 
 export default function ForgotPasswordPage() {
+    const router = useRouter()
     const [form] = Form.useForm();
-    const handleSubmit = (data: any) => {
 
+    const handleSubmit = (data: any) => {
+        router.replace('/')
     }
 
 

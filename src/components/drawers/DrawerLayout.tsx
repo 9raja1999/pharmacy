@@ -24,6 +24,10 @@ export default function DrawerLayout({ open, onClose, children }: IDrawer) {
             extra={null}
             closeIcon={<DrawerCloseIcon />}
             destroyOnClose
+            footer={null}
+            bodyStyle={{
+                padding : '24px 24px 0px 24px'
+            }}
         >
            {children}
         </Drawer>
